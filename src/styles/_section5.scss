@@ -1,0 +1,85 @@
+.section5-main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: $light-gold;
+  overflow: hidden;
+  position: relative;
+  @media screen and(max-width:600px) {
+  }
+  .section5-overlay {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0.9) 5%,
+      rgba(0, 0, 0, 0.7) 10%,
+      rgba(0, 0, 0, 0.2) 20%,
+      // These three 'smooth' out the fade.
+        rgba(0, 0, 0, 0.2) 80%,
+      rgba(0, 0, 0, 0.7) 90%,
+      rgba(0, 0, 0, 0.9) 95%,
+      // Solid to match the background.
+        rgba(0, 0, 0, 1) 100%
+    );
+  }
+  .main-title {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $black;
+    overflow: hidden;
+    z-index: 3;
+  }
+
+  .section5-contents {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    @media screen and(max-width:900px) {
+       flex-direction: column;
+    }
+
+    .content-block {
+      width:30%;
+      height: 70vh;
+      z-index: 1;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      background-position: center;
+      background-size: cover;
+      border-radius: 40px;
+      margin: 2rem 21px;
+      box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+      @media screen and(max-width:900px) {
+        height: 30vh;
+        width: 96%;
+      }
+      .section5-contents-overlay{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        border-radius: 40px;
+        background-color: rgba(0, 0, 0, 0.418);
+      }
+      .content-title{
+        text-align: center;
+        color: $gold;
+        z-index: 3;
+      }
+    }
+  }
+}

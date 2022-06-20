@@ -12,6 +12,9 @@ export default function Footer() {
         <div className="subtitle footer-section1-subtitle">
           Office. 247 K City Business Center Manama. Bahrain
         </div>
+        <div className="subtitle footer-section1-subtitle">
+          <a href='/privacy-policy'><span className='footer-underline'>Privacy Policy</span></a>
+        </div>
       </div>
       <div className="footer-section-2">
         <div className="footer-section-2-logo-container">

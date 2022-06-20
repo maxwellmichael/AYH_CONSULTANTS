@@ -2,7 +2,7 @@ import { useMediaQuery } from '@mui/material'
 import React, { useState} from 'react'
 import AppLogo from '../../assets/icons/ayh_logo.svg'
 import { Link } from 'react-scroll'
-
+import {Link as RLink} from 'react-router-dom'
 
 export default function Navbar() {
   const isPhone = useMediaQuery('(max-width:600px)')
@@ -36,14 +36,22 @@ export default function Navbar() {
     <div className="navbar">
       <div style={{ height: showSidebar ? '100vh' : 0, opacity: showSidebar ? 1 : 0,}} className="sidebar">
         <div className="navbar-links">
-          {links.map((link, i) => (
+          {window.location.pathname !== '/privacy-policy'?links.map((link, i) => (
             <div key={i} className="link-main">
               <Link className="link" to={link.url} offset={-30} smooth={true} duration={800} onClick={()=>toggleSidebar()}>
                 {link.name}
               </Link>
               <div className="link-line"></div>
             </div>
-          ))}
+          )): <div className="link-main"><a className='link' href='/'>Home</a> <div className="link-line"></div></div>}
+          {/* {links.map((link, i) => (
+            <div key={i} className="link-main">
+              <Link className="link" to={link.url} offset={-30} smooth={true} duration={800} onClick={()=>toggleSidebar()}>
+                {link.name}
+              </Link>
+              <div className="link-line"></div>
+            </div>
+          ))} */}
         </div>
       </div>
       <div style={{ flexGrow: 3 }}>
@@ -76,14 +84,14 @@ export default function Navbar() {
       ) : (
         <div style={{ flexGrow: 5 }}>
           <div className="navbar-links">
-          {links.map((link, i) => (
+          {window.location.pathname !== '/privacy-policy'?links.map((link, i) => (
             <div key={i} className="link-main">
               <Link className="link" to={link.url} smooth={true} duration={800}>
                 {link.name}
               </Link>
               <div className="link-line"></div>
             </div>
-          ))}
+          )):<div className="link-main"><a className='link' href='/'>Home</a> <div className="link-line"></div></div>}
           </div>
         </div>
       )}

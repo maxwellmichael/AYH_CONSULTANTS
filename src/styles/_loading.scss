@@ -15,17 +15,21 @@
         }
     }
 
+    .loading-title{
+        color: $gold;
+    }
+
     .spinner {
         content: "";
         box-sizing: border-box;
         position: absolute;
-        width: 8rem;
-        height: 8rem;
+        width: 12rem;
+        height: 12rem;
         border-radius: 50%;
         border: 2px solid #000000;
-        border-top-color: white;
+        border-top-color: $gold;
         border-right-color: #000000;
-        border-bottom-color: white;
+        border-bottom-color: $gold;
         animation: spinner 0.6s linear infinite;
     }
 }

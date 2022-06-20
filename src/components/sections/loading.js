@@ -41,7 +41,7 @@ const LoadingView = ({value}) => {
     return (
         <motion.div variants={loadingVariant} className='loading-main' initial='initial' animate='animate' exit='exit'>
             <div className='spinner'>  </div>
-            <div style={{ color: 'white', textAlign: 'center' }} className='title1 headline1'>
+            <div style={{ textAlign: 'center' }} className='loading-title headline1'>
                 <Counter from={preValue?preValue:0} to={value} />
             </div>
         </motion.div>

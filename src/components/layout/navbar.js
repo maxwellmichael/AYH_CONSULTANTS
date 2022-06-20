@@ -2,7 +2,6 @@ import { useMediaQuery } from '@mui/material'
 import React, { useState} from 'react'
 import AppLogo from '../../assets/icons/ayh_logo.svg'
 import { Link } from 'react-scroll'
-import {Link as RLink} from 'react-router-dom'
 
 export default function Navbar() {
   const isPhone = useMediaQuery('(max-width:600px)')

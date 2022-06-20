@@ -36,42 +36,42 @@ function HomeView({ dispatch, loader }) {
       {
         id: 1,
         src: GoldBanner,
-        loadPoint: 5,
+        loadPoint: 10,
       },
       {
         id: 2,
         src: ForexOilBanner,
-        loadPoint: 5,
+        loadPoint: 10,
       },
       {
         id: 3,
         src: VatBanner,
-        loadPoint: 5,
+        loadPoint: 10,
       },
       {
         id: 4,
         src: RealEstate,
-        loadPoint: 5,
+        loadPoint: 10,
       },
       {
         id: 5,
         src: Forex,
-        loadPoint: 5,
+        loadPoint: 10,
       },
       {
         id: 6,
         src: MainBanner,
-        loadPoint: 5,
+        loadPoint: 10,
       },
       {
         id:7,
         src: AboutImage,
-        loadPoint:5,
+        loadPoint:20,
       },
       {
         id:8,
         src: GlobeImage,
-        loadPoint:12,
+        loadPoint:20,
       }
     ]
 

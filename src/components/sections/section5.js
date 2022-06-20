@@ -6,6 +6,8 @@ import {
 import GoldBanner from '../../assets/images/gold-vat-banner.jpg'
 import ForexOilBanner from '../../assets/images/oil-banner.jpg'
 import VatBanner from '../../assets/images/audit-banner.jpg'
+import RealEstate from '../../assets/images/real-estate.jpg'
+import Forex from '../../assets/images/forex.jpg'
 
 
 
@@ -37,7 +39,19 @@ export default function Section5() {
             <div className="section5-contents-overlay"></div>
             <div className='headline2 content-title'>VAT/AUDIT</div>
           </div>
+
+          <div style={{backgroundImage:`url(${RealEstate})`}} className="content-block">
+            <div className="section5-contents-overlay"></div>
+            <div className='headline2 content-title'>REAL ESTATE</div>
+          </div>
+
+          <div style={{backgroundImage:`url(${Forex})`}} className="content-block">
+            <div className="section5-contents-overlay"></div>
+            <div className='headline2 content-title'>FOREX</div>
+          </div>
         </div>
+
+        
       </RevealFromBottom>
       <div style={{ height: '12rem' }}></div>
     </div>
